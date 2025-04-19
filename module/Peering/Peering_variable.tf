@@ -5,3 +5,7 @@ variable "requester_vpc" {
 variable "accepter_vpc" {
   default = null
 }
+
+variable "tags" {
+  default = null
+}

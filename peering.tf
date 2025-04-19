@@ -3,6 +3,10 @@ locals {
         "peer-seoul-tokyo" = {
             requester_vpc    = "seoul-vpc"
             accepter_vpc     = "tokyo-vpc"
+
+            tags             = {
+                Name = "peer-seoul-tokyo"
+            }
         }
     }
 }
@@ -18,4 +22,5 @@ module "region_peer" {
 
     requester_vpc   = module.vpc_seoul[each.value.requester_vpc].get_vpc_id
     accepter_vpc    = module.vpc_tokyo[each.value.accepter_vpc].get_vpc_id
+    tags            = each.value.tags
 }
