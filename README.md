@@ -4,7 +4,8 @@
 # 🌐 VPC Multi-Region Peering with Terraform
 
 이 레포지토리는 **AWS VPC 간 멀티 리전 피어링(Multi-Region Peering)** 구성을 위한 테라폼 코드입니다.
-아직 수정이 많이 필요한 단계로 간단한 테스트용도로 사용가능합니다.
+현재는 서로 다른 리전 간 vpc peering만 가능합니다. 
+추후 동일 리전 동일 어카운트, 멀티 어카운트 멀티 리전도 가능하게 업데이트 하겠습니다.
 
 ---
 
