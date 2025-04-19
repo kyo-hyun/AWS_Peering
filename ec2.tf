@@ -11,7 +11,7 @@ locals {
       security_group    = ["test-sg1"]
       user_data         = <<-EOF
                           #!/bin/bash
-                          echo 'kyou1508' | passwd ec2-user --stdin
+                          echo 'QWERasdf123!!' | passwd ec2-user --stdin
                           sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
                           systemctl restart sshd
                           yum install -y httpd
